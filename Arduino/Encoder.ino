@@ -5,7 +5,6 @@ const uint8_t B = 3; //B encoder
 const uint8_t PWM_out1 = 5; //  PWM+
 const uint8_t PWM_out2 = 6; //  PWM-
 const unsigned long resolution = 334; // resolution
-
 const unsigned long x = 120000000/resolution;
 
 bool current_A;
@@ -25,7 +24,6 @@ long Position;
 long Last_Position;
 long Pos_req;
 
-
 void setup() {
   pinMode(A,INPUT_PULLUP);
   pinMode(B,INPUT_PULLUP);
@@ -40,7 +38,6 @@ void setup() {
   Pos_req = 1000;
 }
 
-
 void print_speed(){
 
  // if(Direction) Dir = "clockwise";
@@ -49,6 +46,7 @@ void print_speed(){
  // Serial.println("Speed: " + (String)Motor_speed);
  Serial.println((String)Position);
 }
+
 void cycle(){
   current_A = digitalRead(A);
   current_B = digitalRead(B);
