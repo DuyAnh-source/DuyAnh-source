@@ -1,4 +1,7 @@
 // **Author**  **Nguyen Duy Anh***
+// Note:
+// Code is used for reading 2 phase encoder's position without using interupts
+// So it means that in some cases, it will not work correctly
 
 const uint8_t A = 2; // A encoder
 const uint8_t B = 3; //B encoder
@@ -79,6 +82,7 @@ void cycle(){
     past_B = current_B;
   }
 }
+
 void cycle1(){
   current_A = digitalRead(A);
   if((current_A != past_A)){
