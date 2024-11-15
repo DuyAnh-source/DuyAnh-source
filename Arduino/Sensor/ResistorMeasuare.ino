@@ -1,6 +1,8 @@
+// I used a 1000ohm resistor.in this diagram
+// 5V - R - A0 - 1kohmR - GND
+// In case that there is no tool for measurement
 
 void setup() {
-  // put your setup code here, to run once:
 pinMode(A0, INPUT);
 Serial.begin(9600);
 }
