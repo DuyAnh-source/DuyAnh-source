@@ -1,4 +1,4 @@
-// I used a 1000ohm resistor.in this diagram
+// I used a 1000ohm resistor in this diagram
 // 5V - R - A0 - 1kohmR - GND
 // In case that there is no tool for measurement
 
